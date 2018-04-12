@@ -1,0 +1,29 @@
+{
+  "name": "testcafedemo",
+  "version": "1.0.0",
+  "description": "This is a demo repo on using Testcafe for UI Automation.",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "testcafe chrome features/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaszloQ/Testcafe-Demo.git"
+  },
+  "keywords": [
+    "testcafe",
+    "demo",
+    "ui",
+    "automation",
+    "web"
+  ],
+  "author": "Laszlo Kiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaszloQ/Testcafe-Demo/issues"
+  },
+  "homepage": "https://github.com/LaszloQ/Testcafe-Demo#readme",
+  "devDependencies": {
+    "testcafe": "^0.19.2"
+  }
+}
