@@ -1,5 +1,5 @@
 import { notificationPage } from "./notification-page";
-const { baseUrl, path, button, notification } = notificationPage;
+const { baseUrl, path, button, notification, closeMessage } = notificationPage;
 const expectedNotifications = [
   " Action successful ×",
   " Action unsuccesful, please try again ×"
@@ -30,4 +30,16 @@ const expectedNotifications = [
 
       await t.expect( expectedNotifications ).contains( notificationText )
     }
+  });
+
+
+  test( "can be closed", async t => {
+    await t
+      .maximizeWindow( )
+      .click( button )
+      .expect( notification.exists ).eql( true )
+
+    await t
+      .click( closeMessage )
+      .expect( notification.exists ).eql( false )
   });
