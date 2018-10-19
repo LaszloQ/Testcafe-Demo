@@ -8,5 +8,5 @@ fixture `Canvas`
   test( "Reading the content of a canvas page", async t => {
     const canvasInfo = await canvasPage.returnCanvasInfo( );
 
-    console.log( canvasInfo )
+    //console.log( canvasInfo )
   });

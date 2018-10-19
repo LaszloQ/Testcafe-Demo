@@ -13,6 +13,7 @@ sortableTablePage.checkSortingOnColumn = async function( t, index ) {
   await t
     .click( sortableTablePage.headCell.nth( index ) )
     .setTestSpeed( 0.1 )
+    
   const numberOfRows = await this.row.count;
   const array = [];
   let array2 = [];
@@ -25,16 +26,13 @@ sortableTablePage.checkSortingOnColumn = async function( t, index ) {
     array2.push( cellText );
   }
 
-  console.log( array + "   " + array2 )
-
   for( let j = 0; j < array.length; j++ ) {
-    console.log( array.sort( )[j] + "   " + array2[j] )
     if( array.sort( )[j] === array2[j] ) {
       returnValue = true;
     } else {
       returnValue = false;
     }
   }
-  console.log( returnValue )
+
   return returnValue;
 };
