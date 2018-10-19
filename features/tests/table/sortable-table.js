@@ -19,7 +19,7 @@ fixture `Sortable Tables`
   });
 
 
-  test.only( "Email can be sorted by alpabetical order", async t => {
+  test( "Email can be sorted by alpabetical order", async t => {
     const result = await sortableTablePage.checkSortingOnColumn( t, 2 )
 
     await t.expect( result ).eql( true );

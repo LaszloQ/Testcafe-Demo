@@ -7,8 +7,8 @@ export const canvasPage = new Page( );
 canvasPage.path = "/challenging_dom";
 
 canvasPage.returnCanvasInfo = ClientFunction( ( ) => {
-  const canvas = document.getElementById( "canvas" );
-  const info = canvas.getContext( "2d" );
+  const canvas = document.getElementById( "canvas" ).toDataURL( "image/png", 0 );
+  //const info = canvas.getContext( "2d" );
 
-  return info.canvas;
+  return canvas ;
 });
