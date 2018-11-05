@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/LaszloQ/Testcafe-Demo#readme",
   "devDependencies": {
+    "frisby": "^2.1.0",
     "testcafe": "^0.19.2"
   }
 }
