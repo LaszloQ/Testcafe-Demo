@@ -4,7 +4,7 @@
   "description": "This is a demo repo on using Testcafe for UI Automation.",
   "main": "index.js",
   "scripts": {
-    "chrome": "testcafe chrome"
+    "chrome": "testcafe chrome features/tests"
   },
   "repository": {
     "type": "git",
