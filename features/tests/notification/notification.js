@@ -22,7 +22,7 @@ const expectedNotifications = [
   });
 
 
-  test( "should display one of the two expected texts randomly", async t => {
+  test.skip( "should display one of the two expected texts randomly", async t => {
     for( let i = 0; i < 4; i++ ) {
       await t.click( button )
 
@@ -33,7 +33,7 @@ const expectedNotifications = [
   });
 
 
-  test( "can be closed", async t => {
+  test.skip( "can be closed", async t => {
     await t
       .maximizeWindow( )
       .click( button )
